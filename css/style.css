@@ -96,6 +96,21 @@ form input[type="text"], form input[type="password"] {
     background-color: #0056b3;
 }
 
+.ask{
+    color: rgb(247, 186, 108);
+}
+
+.login{
+    text-decoration: none;
+    color: blue;
+    cursor: pointer;
+    border-bottom: solid 1px;
+    transition: background-color 0.3s ease;
+}
+.login:hover{
+    color: rgb(47, 255, 255);
+}
+
 .form-error{
     color: red;
 }

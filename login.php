@@ -15,15 +15,17 @@
 <body>
 
     <section class="wrapper-main">
-        <form action="includes/signup.inc.php" method="POST">
+        <form action="includes/login.inc.php" method="POST">
             <h1>Signup</h1>
             
-            <?php
-            signup_inputs();
-            ?>
+            <label for="username">Username</label>
+            <input type="text" name="username" placeholder="username">
+
+            <label for="password">Password</label>'
+            <input type="password" name="pwd" placeholder="password">'
             
-            <button type="submit" class="button">Signup</button><br>
-            <p class="ask">Click login if already have an account? <a href="login.php" class="login">Login</a></p>
+            <button type="submit" class="button">Login</button><br>
+            <a href="index.php" class="signup">Signup</a>
         </form>  
 
         <?php
