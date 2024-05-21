@@ -28,10 +28,6 @@
             <p class="ask">Click here to register! <a href="signup.php" class="signup">Register</a></p>
         </form>  
 
-        <?php
-        check_signup_errors();
-        ?>
-
     </section>  
     
 </body>

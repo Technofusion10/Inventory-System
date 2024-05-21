@@ -11,25 +11,8 @@ if($_SERVER["REQUEST_METHOD"] === "POST"){
 
 
         //error handlers
-        $errors = [];
-        if(is_input_empty($username, $pwd)){
-            $errors ["empty_input"] = "Fill in all fields";
-        }
+      
 
-        require_once "config_session.inc.php";
-
-        if($errors){
-            $_SESSION["errors_signup"] = $errors;
-
-            $signupData = [
-                "username" => $username,
-            ];
-            $_SESSION["signup_data"] = $signupData;
-
-
-            header ("location: ../index.php");
-            die();
-        }
         
 
     } catch (PDOException $e) {
