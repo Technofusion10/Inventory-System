@@ -1,6 +1,6 @@
 <?php
     require_once "includes/config_session.inc.php";
-    require_once "includes/signup_view.inc.php";
+    require_once "includes/login_view.inc.php";
 ?>
 
 <!DOCTYPE html>
@@ -27,7 +27,9 @@
             <button type="submit" class="button">Login</button><br>
             <p class="ask">Click here to register! <a href="signup.php" class="signup">Register</a></p>
         </form>  
-
+        <?php
+        check_login_erros();
+        ?>
     </section>  
     
 </body>
