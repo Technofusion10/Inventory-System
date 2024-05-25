@@ -11,7 +11,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST"){
         require_once "signup_contr.inc.php";
         
         //error handlers
-        $errors = []; //$errors ["empty_input"] = "Fill in all fields!";
+        $errors = [];
         
         if(is_input_empty($username, $pwd, $email)){
             $errors["empty_input"] = "Fill in all fields!";
