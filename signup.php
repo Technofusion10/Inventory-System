@@ -23,7 +23,7 @@
             ?>
             
             <button type="submit" class="button">Signup</button><br>
-            <p class="ask">Click login if already have an account? <a href="index.php" class="login">Login</a></p>
+            <p class="ask">Back to dashboard <a href="dashboard.php" class="login">Dashboard</a></p>
         </form>  
 
         <?php

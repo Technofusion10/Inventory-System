@@ -3,6 +3,7 @@
     require_once "includes/login_view.inc.php";
 ?>
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,6 +11,11 @@
     <link rel="shortcut icon" type="x-icon" href="img/logo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inventory</title>
+    <script type="text/javascript">
+        function preventBack(){window.history.forward()};
+        setTimeout("preventBack()",0);
+            window.onunload=function(){null;}
+    </script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -21,11 +27,11 @@
             <label for="username">Username</label>
             <input type="text" name="username" placeholder="username">
 
-            <label for="password">Password</label>'
-            <input type="password" name="pwd" placeholder="password">'
+            <label for="password">Password</label>
+            <input type="password" name="pwd" placeholder="password">
             
             <button type="submit" class="button">Login</button><br>
-            <p class="ask">Click here to register! <a href="signup.php" class="signup">Register</a></p>
+            <!-- <p class="ask">Click here to register! <a href="signup.php" class="signup">Register</a></p> -->
         </form>  
         <?php
         check_login_erros();

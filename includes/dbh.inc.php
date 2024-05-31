@@ -1,6 +1,6 @@
 <?php
 
-$dsn = "mysql:host=localhost;dbname=warehouse_inventory";
+$dsn = "mysql:host=localhost;dbname=ustp";
 $dbusername = "root";
 $dbpassword = "";
 

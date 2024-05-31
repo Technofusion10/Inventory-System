@@ -44,7 +44,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST"){
 
         create_user($pdo, $username, $pwd, $email);
 
-        header ("location: ../signup.php?signup=success");
+        header ("location: ../dashboard.php?signup=success");
         
 
         $pdo = null;
